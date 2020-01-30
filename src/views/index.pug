@@ -1,0 +1,14 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Главная"
+
+block content
+    main
+        block main
+            include ../blocks/modules/main-catalog/main-catalog
+
+block scripts
+	script(src="js/main.js")
+	script(src="js/vendor.js")
